@@ -10,7 +10,7 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow font-medium">
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/bookings'>My Bookings</NavLink></li>
         <li><NavLink to='blogs'>Blogs</NavLink></li>
@@ -18,11 +18,11 @@ const Navbar = () => {
       </ul>
     </div>
     {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
-    <img src="https://i.ibb.co.com/HTD6jSWR/logo.png" alt="" />
+    <img src="https://i.ibb.co.com/HTD6jSWR/logo.png" alt="logo" />
     <h1 className='font-bold text-2xl'>Phudu</h1>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 text-sm md:text-lg">
+    <ul className="menu menu-horizontal px-1 text-sm md:text-lg font-medium">
        <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/bookings'>My Bookings</NavLink></li>
         <li><NavLink to='blogs'>Blogs</NavLink></li>
@@ -30,7 +30,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-blue-500 text-white rounded-2xl font-semibold">Emergency</a>
+    <button className="btn bg-blue-500 text-white rounded-2xl font-semibold">Emergency</button>
   </div>
 </div>
 };
