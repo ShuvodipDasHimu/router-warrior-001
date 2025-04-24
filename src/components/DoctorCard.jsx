@@ -27,7 +27,8 @@ const DoctorCard = ({ doctor }) => {
       <p className="text-sm text-gray-600">{education}</p>
       <p className="text-sm text-gray-500 mt-1">Reg No: {registrationNumber}</p>
       <Link
-        to={`/doctors/${id}`}
+        key={id}
+        to={`/doctor-details/${doctor.id}`}
         className="mt-4 inline-block px-4 py-2 border border-blue-600 text-blue-600 rounded-full hover:bg-blue-600 hover:text-white w-1/2"
       >
         View Details
