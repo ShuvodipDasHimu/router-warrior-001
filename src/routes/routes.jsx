@@ -32,13 +32,13 @@ export const router = createBrowserRouter([
         Component: Blogs,
       },
       {
-        path: "/doctor-details",
+        path: "/doctor-details/:id",
         Component: DoctorDetails,
       },
       {
         path: "/doctors",
         Component: DoctorsContainer,
-        loader: () => fetch('../doctors.json'),
+        loader: () => fetch('/doctors.json'),
         hydrateFallbackElement: <p>Loading....</p>,
       },
     ],

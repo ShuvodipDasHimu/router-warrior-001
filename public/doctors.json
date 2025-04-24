@@ -1,134 +1,146 @@
 [
   {
     "id": 1,
-    "image": "",
     "name": "Dr. Anwar Hossain",
     "education": "MBBS, MS (General Surgery)",
     "speciality": "General Surgery",
     "experience": 15,
     "fee": 1000,
     "workplace": "Dhaka Medical Center, Dhaka",
-    "registrationNumber": "BD/REG/2005/0198"
+    "registrationNumber": "BD/REG/2005/0198",
+    "image": "https://i.ibb.co.com/93gmYmzn/0001.jpg",
+    "availability": ["Tuesday", "Thursday", "Saturday"]
   },
   {
     "id": 2,
-    "image": "",
     "name": "Dr. Shahnaz Akter",
     "education": "MBBS, MD (Obstetrics and Gynecology)",
     "speciality": "Obstetrics and Gynecology",
     "experience": 10,
     "fee": 800,
     "workplace": "Bangladesh Women's Clinic, Dhaka",
-    "registrationNumber": "BD/REG/2010/0342"
+    "registrationNumber": "BD/REG/2010/0342",
+    "image": "https://i.ibb.co.com/XkDxNZsz/dr-george-karimundackal-mumbai-oncologists-x2w4n7et74-250.jpg",
+    "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
     "id": 3,
-    "image": "",
     "name": "Dr. Kamrul Islam",
     "education": "MBBS, DLO (Ear, Nose, and Throat)",
     "speciality": "ENT",
     "experience": 12,
     "fee": 600,
     "workplace": "City ENT Hospital, Chittagong",
-    "registrationNumber": "BD/REG/2009/0561"
+    "registrationNumber": "BD/REG/2009/0561",
+    "image": "https://i.ibb.co.com/35dKd4nq/ganesh-nagarajan-ed528458a2.jpg",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
   },
   {
     "id": 4,
-    "image": "",
-    "name": "Dr. Farhana Rahman",
+    "name": "Dr. Abdur Rahman",
     "education": "MBBS, MD (Dermatology)",
     "speciality": "Dermatology",
     "experience": 7,
     "fee": 700,
     "workplace": "Dermacare Skin Clinic, Sylhet",
-    "registrationNumber": "BD/REG/2013/0723"
+    "registrationNumber": "BD/REG/2013/0723",
+    "image": "https://i.ibb.co.com/S8g8PjC/images-1.jpg",
+    "availability": ["Monday", "Thursday", "Saturday"]
   },
   {
     "id": 5,
-    "image": "",
     "name": "Dr. Imran Ali",
     "education": "MBBS, MS (Orthopaedics)",
     "speciality": "Orthopaedics",
     "experience": 14,
     "fee": 900,
     "workplace": "Chittagong Orthopaedic Hospital, Chittagong",
-    "registrationNumber": "BD/REG/2006/0391"
+    "registrationNumber": "BD/REG/2006/0391",
+    "image": "https://i.ibb.co.com/RpDHFS8q/images.jpg",
+    "availability": ["Sunday", "Tuesday", "Friday"]
   },
   {
     "id": 6,
-    "image": "",
-    "name": "Dr. Meherun Nahar",
+    "name": "Dr. Sarah Rahman",
     "education": "MBBS, MD (Pediatrics)",
     "speciality": "Pediatrics",
     "experience": 8,
     "fee": 500,
     "workplace": "Children's Hospital, Rajshahi",
-    "registrationNumber": "BD/REG/2012/0634"
+    "registrationNumber": "BD/REG/2012/0634",
+    "image": "https://i.ibb.co.com/9HMw0pmB/inbound7304903530181168052.jpg",
+    "availability": ["Monday", "Wednesday", "Friday"]
   },
   {
     "id": 7,
-    "image": "",
-    "name": "Dr. Zubair Hossain",
+    "name": "Dr. Tanjina Sultana",
     "education": "MBBS, MD (Cardiology)",
     "speciality": "Cardiology",
     "experience": 18,
     "fee": 1200,
     "workplace": "Heart Care Hospital, Dhaka",
-    "registrationNumber": "BD/REG/2003/0278"
+    "registrationNumber": "BD/REG/2003/0278",
+    "image": "https://i.ibb.co.com/gL6q5djK/neet-medical.png",
+    "availability": ["Tuesday", "Thursday", "Saturday"]
   },
   {
     "id": 8,
-    "image": "",
-    "name": "Dr. Tanjina Sultana",
+    "name": "Dr. Zubair Hossain",
     "education": "MBBS, MS (Ophthalmology)",
     "speciality": "Ophthalmology",
     "experience": 11,
     "fee": 650,
     "workplace": "Bright Eye Care, Dhaka",
-    "registrationNumber": "BD/REG/2008/0492"
+    "registrationNumber": "BD/REG/2008/0492",
+    "image": "https://i.ibb.co.com/Y4Fb5CC5/28shisir.png",
+    "availability": ["Sunday", "Wednesday", "Friday"]
   },
   {
     "id": 9,
-    "image": "",
     "name": "Dr. Nafisa Begum",
     "education": "MBBS, MD (Psychiatry)",
     "speciality": "Psychiatry",
     "experience": 6,
     "fee": 700,
     "workplace": "MindCare Clinic, Khulna",
-    "registrationNumber": "BD/REG/2014/0831"
+    "registrationNumber": "BD/REG/2014/0831",
+    "image": "https://i.ibb.co.com/Nd7hCxJT/30.jpg",
+    "availability": ["Monday", "Wednesday", "Saturday"]
   },
   {
     "id": 10,
-    "image": "",
     "name": "Dr. Abdul Kader",
     "education": "MBBS, MS (Urology)",
     "speciality": "Urology",
     "experience": 16,
     "fee": 1100,
     "workplace": "Keen Kidney Clinic, Rajshahi",
-    "registrationNumber": "BD/REG/2004/0154"
+    "registrationNumber": "BD/REG/2004/0154",
+    "image": "https://i.ibb.co.com/MrmTPH5/202412221211-Iftekhar-Imam-copy.jpg",
+    "availability": ["Tuesday", "Thursday", "Friday"]
   },
   {
     "id": 11,
-    "image": "",
     "name": "Dr. Rifat Rahman",
     "education": "MBBS, MD (Endocrinology)",
     "speciality": "Endocrinology",
     "experience": 9,
     "fee": 750,
     "workplace": "Endocrine Wellness Clinic, Barisal",
-    "registrationNumber": "BD/REG/2011/0674"
+    "registrationNumber": "BD/REG/2011/0674",
+    "image": "https://i.ibb.co.com/23Ftdz8B/202412221245-TOUHIDUL-KARIM-copy.jpg",
+    "availability": ["Sunday", "Tuesday", "Thursday"]
   },
   {
     "id": 12,
-    "image": "",
     "name": "Dr. Sharmin Akter",
     "education": "MBBS, MD (Gastroenterology)",
     "speciality": "Gastroenterology",
     "experience": 10,
     "fee": 850,
     "workplace": "GastroCare Clinic, Dhaka",
-    "registrationNumber": "BD/REG/2009/0224"
+    "registrationNumber": "BD/REG/2009/0224",
+    "image": "https://i.ibb.co.com/spkqntVh/2022100409121639478147-2-1621489918-2-A-Q-M-Mohsen-Sir.jpg",
+    "availability": ["Monday", "Wednesday", "Friday"]
   }
 ]
