@@ -3,18 +3,24 @@ import { useParams, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const DoctorDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const [doctor, setDoctor] = useState('');
+  const [doctor, setDoctor] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [notFound, setNotFound] = useState(false);
 
   useEffect(() => {
     fetch("/doctors.json")
       .then(res => res.json())
       .then(data => {
         const found = data.find(doc => doc.id === Number(id));
-        setDoctor(found);
+        if (!found) {
+          setNotFound(true);
+        } else {
+          setDoctor(found);
+        }
         setLoading(false);
       });
   }, [id]);
@@ -37,8 +43,25 @@ const DoctorDetails = () => {
     }, 2000);
   };
 
-  if (loading) return <p>Loading doctor details...</p>;
-  if (!doctor) return <p>Doctor not found.</p>;
+  if (loading) return <p className="text-center mt-12 text-xl">Loading doctor details...</p>;
+
+  if (notFound) {
+    return (
+      <div className="text-center mt-20">
+        <h1 className="text-3xl font-bold mb-4 text-red-500">No Doctor Found!!</h1>
+        <p className="text-gray-400 mb-2 text-xl font-medium">
+          No doctor was found with the ID:
+        </p>
+        <p className="text-2xl font-semibold text-gray-500 mb-6">{id}</p>
+        <button
+          onClick={() => navigate("/")}
+          className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition"
+        >
+          View All Doctors
+        </button>
+      </div>
+    );
+  }
 
   const {
     name,
@@ -84,7 +107,12 @@ const DoctorDetails = () => {
             ))}
           </span>
           <p>
-            Consultation Fee: <span className='text-blue-400 font-semibold'>Taka: {fee} <span className='font-light text-gray-500'>(incl. Vat)</span> <span className='text-blue-400 font-light'>Per consultation</span></span>
+            Consultation Fee:{" "}
+            <span className='text-blue-400 font-semibold'>
+              Taka: {fee}{" "}
+              <span className='font-light text-gray-500'>(incl. Vat)</span>{" "}
+              <span className='text-blue-400 font-light'>Per consultation</span>
+            </span>
           </p>
 
           <button

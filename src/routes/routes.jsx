@@ -18,22 +18,27 @@ export const router = createBrowserRouter([
       {
         path: "/",
         Component: Home,
+        hydrateFallbackElement: <p>Loading....</p>,
       },
       {
         path: "/bookings",
         Component: Bookings,
+        hydrateFallbackElement: <p>Loading....</p>,
       },
       {
         path: "/appointments",
         Component: Appointments,
+        hydrateFallbackElement: <p>Loading....</p>,
       },
       {
         path: "/blogs",
         Component: Blogs,
+        hydrateFallbackElement: <p>Loading....</p>,
       },
       {
         path: "/doctor-details/:id",
         Component: DoctorDetails,
+        hydrateFallbackElement: <p>Loading....</p>,
       },
       {
         path: "/doctors",
