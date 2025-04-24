@@ -2,7 +2,8 @@ import React from 'react';
 import { NavLink } from 'react-router';
 
 const Navbar = () => {
-  return <div className="navbar w-9/10 mx-auto">
+  return <div className='bg-[#EFEFEF]'>
+    <div className="navbar w-8/10 mx-auto">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -19,10 +20,10 @@ const Navbar = () => {
     </div>
     {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
     <img src="https://i.ibb.co.com/HTD6jSWR/logo.png" alt="logo" />
-    <h1 className='font-bold text-2xl'>Phudu</h1>
+    <h1 className='font-bold text-4xl'>Phudu</h1>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 text-sm md:text-lg font-medium">
+    <ul className="menu menu-horizontal px-1 text-sm md:text-lg font-medium gap-10">
        <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/bookings'>My Bookings</NavLink></li>
         <li><NavLink to='blogs'>Blogs</NavLink></li>
@@ -30,9 +31,10 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <button className="btn bg-blue-500 text-white rounded-2xl font-semibold">Emergency</button>
+    <button className="btn bg-blue-500 text-xl text-white rounded-2xl font-semibold">Emergency</button>
   </div>
 </div>
+  </div>
 };
 
 export default Navbar;

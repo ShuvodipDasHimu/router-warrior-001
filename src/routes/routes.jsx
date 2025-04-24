@@ -1,40 +1,48 @@
-import { createBrowserRouter, Routes } from "react-router";
-import Bookings from '../pages/Bookings'
-import Home from "../pages/Home";
+import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout";
+import Home from "../pages/Home";
+import Bookings from "../pages/Bookings";
 import Appointments from "../pages/Appointments";
 import Blogs from "../pages/Blogs";
 import DoctorDetails from "../pages/DoctorDetails";
-import ErrorPage from '../pages/ErrorPage';
+import DoctorsContainer from "../components/DoctorsContainer";
+import ErrorPage from "../pages/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
+
     children: [
       {
         path: "/",
         Component: Home,
       },
       {
-        path: '/bookings',
-        Component:<Bookings></Bookings>
+        path: "/bookings",
+        Component: Bookings,
       },
       {
-        path: '/appointments',
-        Component: <Appointments></Appointments>,
+        path: "/appointments",
+        Component: Appointments,
       },
       {
-        path: '/blogs',
-        Component: <Blogs></Blogs>,
+        path: "/blogs",
+        Component: Blogs,
       },
       {
-        path: 'doctor-details',
-        Component: <DoctorDetails></DoctorDetails>
-      }
+        path: "/doctor-details",
+        Component: DoctorDetails,
+      },
+      {
+        path: "/doctors",
+        Component: DoctorsContainer,
+        loader: () => fetch('../doctors.json'),
+        hydrateFallbackElement: <p>Loading....</p>,
+      },
     ],
   },
 ]);
 
-export default router
+export default router;

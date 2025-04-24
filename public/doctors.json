@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "image": "",
+    "name": "Dr. Anwar Hossain",
+    "education": "MBBS, MS (General Surgery)",
+    "speciality": "General Surgery",
+    "experience": 15,
+    "fee": 1000,
+    "workplace": "Dhaka Medical Center, Dhaka",
+    "registrationNumber": "BD/REG/2005/0198"
+  },
+  {
+    "id": 2,
+    "image": "",
+    "name": "Dr. Shahnaz Akter",
+    "education": "MBBS, MD (Obstetrics and Gynecology)",
+    "speciality": "Obstetrics and Gynecology",
+    "experience": 10,
+    "fee": 800,
+    "workplace": "Bangladesh Women's Clinic, Dhaka",
+    "registrationNumber": "BD/REG/2010/0342"
+  },
+  {
+    "id": 3,
+    "image": "",
+    "name": "Dr. Kamrul Islam",
+    "education": "MBBS, DLO (Ear, Nose, and Throat)",
+    "speciality": "ENT",
+    "experience": 12,
+    "fee": 600,
+    "workplace": "City ENT Hospital, Chittagong",
+    "registrationNumber": "BD/REG/2009/0561"
+  },
+  {
+    "id": 4,
+    "image": "",
+    "name": "Dr. Farhana Rahman",
+    "education": "MBBS, MD (Dermatology)",
+    "speciality": "Dermatology",
+    "experience": 7,
+    "fee": 700,
+    "workplace": "Dermacare Skin Clinic, Sylhet",
+    "registrationNumber": "BD/REG/2013/0723"
+  },
+  {
+    "id": 5,
+    "image": "",
+    "name": "Dr. Imran Ali",
+    "education": "MBBS, MS (Orthopaedics)",
+    "speciality": "Orthopaedics",
+    "experience": 14,
+    "fee": 900,
+    "workplace": "Chittagong Orthopaedic Hospital, Chittagong",
+    "registrationNumber": "BD/REG/2006/0391"
+  },
+  {
+    "id": 6,
+    "image": "",
+    "name": "Dr. Meherun Nahar",
+    "education": "MBBS, MD (Pediatrics)",
+    "speciality": "Pediatrics",
+    "experience": 8,
+    "fee": 500,
+    "workplace": "Children's Hospital, Rajshahi",
+    "registrationNumber": "BD/REG/2012/0634"
+  },
+  {
+    "id": 7,
+    "image": "",
+    "name": "Dr. Zubair Hossain",
+    "education": "MBBS, MD (Cardiology)",
+    "speciality": "Cardiology",
+    "experience": 18,
+    "fee": 1200,
+    "workplace": "Heart Care Hospital, Dhaka",
+    "registrationNumber": "BD/REG/2003/0278"
+  },
+  {
+    "id": 8,
+    "image": "",
+    "name": "Dr. Tanjina Sultana",
+    "education": "MBBS, MS (Ophthalmology)",
+    "speciality": "Ophthalmology",
+    "experience": 11,
+    "fee": 650,
+    "workplace": "Bright Eye Care, Dhaka",
+    "registrationNumber": "BD/REG/2008/0492"
+  },
+  {
+    "id": 9,
+    "image": "",
+    "name": "Dr. Nafisa Begum",
+    "education": "MBBS, MD (Psychiatry)",
+    "speciality": "Psychiatry",
+    "experience": 6,
+    "fee": 700,
+    "workplace": "MindCare Clinic, Khulna",
+    "registrationNumber": "BD/REG/2014/0831"
+  },
+  {
+    "id": 10,
+    "image": "",
+    "name": "Dr. Abdul Kader",
+    "education": "MBBS, MS (Urology)",
+    "speciality": "Urology",
+    "experience": 16,
+    "fee": 1100,
+    "workplace": "Keen Kidney Clinic, Rajshahi",
+    "registrationNumber": "BD/REG/2004/0154"
+  },
+  {
+    "id": 11,
+    "image": "",
+    "name": "Dr. Rifat Rahman",
+    "education": "MBBS, MD (Endocrinology)",
+    "speciality": "Endocrinology",
+    "experience": 9,
+    "fee": 750,
+    "workplace": "Endocrine Wellness Clinic, Barisal",
+    "registrationNumber": "BD/REG/2011/0674"
+  },
+  {
+    "id": 12,
+    "image": "",
+    "name": "Dr. Sharmin Akter",
+    "education": "MBBS, MD (Gastroenterology)",
+    "speciality": "Gastroenterology",
+    "experience": 10,
+    "fee": 850,
+    "workplace": "GastroCare Clinic, Dhaka",
+    "registrationNumber": "BD/REG/2009/0224"
+  }
+]
