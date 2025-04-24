@@ -4,7 +4,7 @@ import { FaFacebook , FaSquareXTwitter, FaLinkedin, FaYoutube } from "react-icon
 
 
 const Footer = () => {
-  return <footer className="footer footer-horizontal footer-center bg-white text-base-content rounded p-10">
+  return <footer className="mt-16 footer footer-horizontal footer-center bg-white text-base-content rounded p-10">
   <nav className='flex flex-row'>
     <img src="https://i.ibb.co.com/HTD6jSWR/logo.png" alt="logo" />
     <h1 className='font-bold text-3xl'>Phudu</h1>

@@ -1,0 +1,29 @@
+{
+  "blogs": [
+    {
+      "question": "What is useState and how does it work in React?",
+      "answer": "useState is a hook in React that lets you add state to functional components. It returns an array with two elements: the current state value and a function to update that state. When you call the update function, the component re-renders with the new state.",
+      "date_added": "2025-04-24"
+    },
+    {
+      "question": "What is the purpose of useEffect in React?",
+      "answer": "useEffect is a hook that allows you to perform side effects in functional components. It's commonly used for tasks like fetching data, subscribing to events, or manually manipulating the DOM. It runs after every render by default, but you can control when it runs by specifying dependencies.",
+      "date_added": "2025-04-24"
+    },
+    {
+      "question": "What is a custom hook in React and when should you use one?",
+      "answer": "A custom hook is a JavaScript function that starts with 'use' and can call other hooks inside it. It allows you to reuse stateful logic across different components. You should create custom hooks when you need to share logic, such as form handling or fetching data, across multiple components.",
+      "date_added": "2025-04-24"
+    },
+    {
+      "question": "Difference between controlled and uncontrolled components? Which one is better?",
+      "answer": "A controlled component is one where the form data is handled by React state, while an uncontrolled component stores its data in the DOM itself. Controlled components are generally recommended because they offer more control over the form data, but uncontrolled components can be useful for simple forms or when integrating with non-React code.",
+      "date_added": "2025-04-24"
+    },
+    {
+      "question": "Tell us something about useFormStatus() (explore and explain)",
+      "answer": "useFormStatus is a relatively new hook in React, introduced to manage the state of forms, particularly when dealing with form submissions and validation. It helps track the form's submission status (whether it's submitting, successful, or failed), and can be used for handling loading states or displaying success/error messages. It's part of React’s commitment to improving form management and reducing boilerplate code.",
+      "date_added": "2025-04-24"
+    }
+  ]
+}
