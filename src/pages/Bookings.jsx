@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
 
 const Bookings = () => {
   const [bookedDoctors, setBookedDoctors] = useState([]);
@@ -8,32 +16,54 @@ const Bookings = () => {
     const bookingIds = JSON.parse(localStorage.getItem("bookings")) || [];
 
     fetch("/doctors.json")
-      .then(res => res.json())
-      .then(data => {
-        const filtered = data.filter(doc => bookingIds.includes(String(doc.id)));
+      .then((res) => res.json())
+      .then((data) => {
+        const filtered = data.filter((doc) =>
+          bookingIds.includes(String(doc.id))
+        );
         setBookedDoctors(filtered);
       });
   }, []);
 
   const cancelAppointment = (id) => {
-    const updatedBookings = bookedDoctors.filter(doc => doc.id !== id);
+    const updatedBookings = bookedDoctors.filter((doc) => doc.id !== id);
     setBookedDoctors(updatedBookings);
 
     const stored = JSON.parse(localStorage.getItem("bookings")) || [];
-    const updated = stored.filter(bookedId => bookedId !== String(id));
+    const updated = stored.filter((bookedId) => bookedId !== String(id));
     localStorage.setItem("bookings", JSON.stringify(updated));
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="max-w-6xl mx-auto p-6">
       {bookedDoctors.length > 0 ? (
         <>
+          {/* Recharts Chart */}
+          <div className="bg-white shadow-md p-4 rounded-lg mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-center">Appointment Fees Overview</h2>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart
+                data={bookedDoctors.map((doc) => ({
+                  name: doc.name.split(" ").slice(0, 2).join(" "), // short name
+                  fee: doc.fee,
+                }))}
+                margin={{ top: 20, right: 30, left: 0, bottom: 5 }}
+              >
+                <XAxis dataKey="name" />
+                <YAxis />
+                <Tooltip />
+                <Bar dataKey="fee" fill="#0088FE" />
+              </BarChart>
+            </ResponsiveContainer>
+          </div>
+
+          {/* Appointment List */}
           <h1 className="text-3xl font-bold text-center mb-2">My Today Appointments</h1>
           <p className="text-center text-gray-500 mb-6">
             Our platform connects you with verified, experienced doctors across various specialties — all at your convenience.
           </p>
 
-          {bookedDoctors.map(doctor => (
+          {bookedDoctors.map((doctor) => (
             <div
               key={doctor.id}
               className="bg-white rounded-lg shadow-md p-4 mb-4"
